@@ -38,7 +38,7 @@ void menuAplicacao()
             Console.WriteLine($"Opção escolhida {4}");
             break;
         case 0:
-            Console.WriteLine($"Opção escolhida {0}");
+            Console.WriteLine($"Acabou!!! {0}");
             break;
         default:
             Console.WriteLine("Opção invalida!");
