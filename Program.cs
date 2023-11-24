@@ -47,7 +47,7 @@ void ExibirOpcoesDoMenu()
             ExibeMediaDaBanda();
             break;
         case 0:
-            Console.WriteLine($"Acabou!!! {0}");
+            Console.WriteLine($"Acabou!!!");
             break;
         default:
             Console.WriteLine("Opção invalida!");
@@ -130,19 +130,22 @@ void ExibeMediaDaBanda()
     {
         List<int> notasDaBanda = bandasRegistrasdas[nomeDaBanda];
 
+        // int soma = 0;
+        // int contador = 0;
 
-
-        int soma = 0;
-        int contador = 0;
-
-        foreach (var notas in notasDaBanda)
-        {
-            soma += notas;
-            contador++;
-        };
-        int media = soma / contador;
-        Console.WriteLine($"\nA soma das notas é: {soma}");
-        Console.WriteLine($"A Media da banda {nomeDaBanda} é: {media}");
+        // foreach (var notas in notasDaBanda)
+        // {
+        //     soma += notas;
+        //     contador++;
+        // };
+        // int media = soma / contador;
+        // Console.WriteLine($"\nA soma das notas é: {soma}");
+        // Console.WriteLine($"A Media da banda {nomeDaBanda} é: {media}");
+        Console.WriteLine($"A Media da banda {nomeDaBanda} é: {notasDaBanda.Average()}.");
+        Console.WriteLine($"Digite qualquer tecla para voltar ao menu principal");
+        Console.ReadKey();
+        Console.Clear();
+        ExibirOpcoesDoMenu();
     }
     else
     {
